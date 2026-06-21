@@ -76,6 +76,8 @@ h3 { font-size: 20px; }
 .hero-lead { margin: 0; color: #374039; font-size: 17px; }
 .page-title { padding: 58px 0 52px; background: var(--paper); }
 .page-title p:last-child { margin: 0; color: var(--muted); font-size: 17px; }
+.page-title-photo { margin: 26px 0 0; overflow: hidden; border-radius: 16px; background: var(--white); box-shadow: var(--shadow); }
+.page-title-photo img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center; }
 .profile-hero { padding-bottom: 62px; }
 .profile-hero-grid { display: grid; gap: 32px; align-items: center; }
 .profile-main-title { margin-bottom: 20px; font-size: clamp(42px, 12vw, 58px); }
@@ -254,6 +256,15 @@ blockquote { margin: 28px 0; padding: 20px 0 20px 20px; border-left: 3px solid v
 .faq-list summary::after { content: "+"; position: absolute; right: 8px; top: 16px; color: var(--clinic-blue); font-size: 25px; font-weight: 400; }
 .faq-list details[open] summary::after { content: "−"; }
 .faq-list details p { margin: -4px 0 22px; color: var(--muted); }
+
+.review-showcase { display: grid; gap: 24px; }
+.review-showcase .section-heading { max-width: 720px; margin-bottom: 0; }
+.review-photo { width: 100%; margin: 0; overflow: hidden; border-radius: 16px; background: var(--white); box-shadow: var(--shadow); }
+.review-photo img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center; }
+.review-action { max-width: 720px; display: grid; gap: 12px; }
+.review-action p { margin: 0; color: var(--muted); }
+.review-action .button { justify-self: start; }
+.review-action .microcopy { margin-top: 0; }
 
 .final-cta { padding: 76px 0 90px; background: var(--clinic-blue-dark); color: white; text-align: center; }
 .final-cta .eyebrow { color: #dce9f3; }
