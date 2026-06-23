@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>料金・アクセス｜長野心楽整体院</title>
   <meta name="description" content="長野心楽整体院の料金、営業時間、定休日、アクセス、駐車場をまとめています。長野駅東口から徒歩約7〜10分、駐車場4台。最新料金と空席はホットペッパービューティーで確認できます。">
-  <link rel="stylesheet" href="assets/css/site.css?v=20260623price5">
+  <link rel="stylesheet" href="assets/css/site.css?v=20260623price9">
   <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
@@ -65,30 +65,39 @@
             <span role="columnheader">料金</span>
           </div>
           <div class="price-row price-row-offer" role="row">
-            <div role="cell"><strong>ご新規様</strong></div>
-            <div role="cell">初回限定 60分</div>
-            <div class="price-cell-offer" role="cell">
-              <span class="table-regular-label">通常価格</span>
-              <span class="table-regular-price"><span class="regular-number">10,000</span>円</span>
+            <div class="price-plan-cell" role="cell"><strong>ご新規様</strong><span>初回限定60分</span></div>
+            <div class="price-row-spacer" role="cell" aria-hidden="true"></div>
+            <div class="price-cell price-cell-offer" role="cell">
+              <span class="table-regular-label">通常価格 初診料3,000円 + 施術料7,000円</span>
+              <div class="offer-price-line">
+                <span class="table-regular-price"><span class="regular-number">10,000</span>円</span>
+                <span class="offer-price-arrow" aria-hidden="true">→</span>
+                <strong class="sale-price-table">5,980円</strong>
+              </div>
               <span class="discount-badge price-table-badge">初回限定 約40%OFF</span>
-              <strong class="sale-price-table">5,980円</strong>
-              <small>初診料3,000円 + 施術料7,000円</small>
             </div>
           </div>
           <div class="price-row price-row-coupon" role="row">
-            <div role="cell"><strong>再来</strong></div>
-            <div role="cell">30日以内に再来院の方</div>
-            <div role="cell"><strong class="coupon-price">6,000円</strong><span>通常7,000円</span><small>クーポン価格</small></div>
+            <div class="price-plan-cell" role="cell"><strong>再来</strong><span>30日以内</span></div>
+            <div class="price-row-spacer" role="cell" aria-hidden="true"></div>
+            <div class="price-cell" role="cell">
+              <small>クーポン価格</small>
+              <div class="coupon-price-line">
+                <span class="coupon-regular-price">通常<span class="regular-number">7,000</span>円</span>
+                <span class="offer-price-arrow" aria-hidden="true">→</span>
+                <strong class="coupon-price">6,000円</strong>
+              </div>
+            </div>
           </div>
           <div class="price-row" role="row">
-            <div role="cell"><strong>再来</strong></div>
-            <div role="cell">1か月以上3か月以内の方</div>
-            <div role="cell"><strong>7,000円</strong></div>
+            <div class="price-plan-cell" role="cell"><strong>再来</strong><span>1〜3か月以内</span></div>
+            <div class="price-row-spacer" role="cell" aria-hidden="true"></div>
+            <div class="price-cell" role="cell"><strong>7,000円</strong></div>
           </div>
           <div class="price-row" role="row">
-            <div role="cell"><strong>再来</strong></div>
-            <div role="cell">3か月以上の方</div>
-            <div role="cell"><strong>8,000円</strong><span>再診料1,000円 + 施術料7,000円</span></div>
+            <div class="price-plan-cell" role="cell"><strong>再来</strong><span>3か月以上</span></div>
+            <div class="price-row-spacer" role="cell" aria-hidden="true"></div>
+            <div class="price-cell" role="cell"><strong>8,000円</strong><span>再診料1,000円 + 施術料7,000円</span></div>
           </div>
         </div>
 
@@ -110,7 +119,7 @@
         <dl class="business-list detail-list">
           <div><dt>月〜水・金</dt><dd>9:00〜18:00</dd></div>
           <div><dt>土曜日</dt><dd>9:00〜17:00</dd></div>
-          <div><dt>定休日</dt><dd>木・日曜日・不定期</dd></div>
+          <div><dt>定休日</dt><dd>木・日曜日・不定休</dd></div>
           <div><dt>支払い方法</dt><dd>現金のみ</dd></div>
         </dl>
       </div>
@@ -142,7 +151,7 @@
         <div class="info-panel">
           <h3>駐車場4台</h3>
           <p>駐車位置がわかりにくい場合は、ご予約時またはご来院前にお電話でご相談ください。院の場所や停め方をご案内します。</p>
-          <a class="text-link" href="tel:0262647788">026-264-7788</a>
+          <a class="button button-outline phone-button" href="tel:0262647788">026-264-7788</a>
         </div>
       </div>
     </section>
@@ -159,16 +168,15 @@
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer" id="footer">
     <div class="container footer-grid">
-      <div><strong>長野心楽整体院</strong><p>〒380-0935 長野県長野市中御所2-24-15</p></div>
+      <div><strong>長野心楽整体院</strong><p>〒380-0935 長野県長野市中御所2-24-15</p><p><a class="footer-phone" href="tel:0262647788">026-264-7788</a></p></div>
       <nav aria-label="フッターナビゲーション">
         <a href="index.html">ホーム</a>
         <a href="annai.html">初めての方</a>
         <a href="access.html">料金・アクセス</a>
         <a href="policy.html">院長挨拶</a>
       </nav>
-      <p class="footer-note">料金・営業時間・住所等は公開前に最新情報を再確認します。</p>
     </div>
   </footer>
 

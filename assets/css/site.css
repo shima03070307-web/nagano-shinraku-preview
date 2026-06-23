@@ -1,5 +1,6 @@
 :root {
   --ink: #202823;
+  --body-text: #384139;
   --muted: #5f6962;
   --paper: #fffdf8;
   --white: #ffffff;
@@ -24,7 +25,7 @@ html { scroll-behavior: smooth; }
 [id] { scroll-margin-top: 86px; }
 body {
   margin: 0;
-  color: var(--ink);
+  color: var(--body-text);
   background: var(--paper);
   font-family: var(--font-body);
   font-size: 16px;
@@ -70,7 +71,7 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--lamp); outline
 .hero-visual { margin: 0; overflow: hidden; border-radius: 22px; box-shadow: var(--shadow); }
 .hero-visual img { width: 100%; height: clamp(190px, 56vw, 300px); object-fit: cover; object-position: 64% 48%; }
 .eyebrow { margin: 0 0 12px; color: var(--clinic-blue-dark); font-size: 16px; font-weight: 800; letter-spacing: 0.04em; }
-h1, h2, h3 { margin-top: 0; font-family: var(--font-display); line-height: 1.45; letter-spacing: 0.02em; }
+h1, h2, h3 { margin-top: 0; color: var(--ink); font-family: var(--font-display); line-height: 1.45; letter-spacing: 0.02em; }
 h1 { margin-bottom: 20px; font-size: clamp(31px, 8.2vw, 46px); font-weight: 700; }
 .headline-line { display: block; }
 .headline-emphasis { color: var(--clinic-blue-dark); }
@@ -120,13 +121,14 @@ h3 { font-size: 20px; }
 .section-heading { margin-bottom: 36px; }
 .section-heading-tight { margin-bottom: 24px; }
 .section-heading > p:last-child { max-width: 720px; color: var(--muted); }
+.principles .section-heading > p { max-width: 720px; color: var(--body-text); }
 .policy-list { display: grid; gap: 18px; }
 .policy-list article { padding-bottom: 18px; border-bottom: 1px solid var(--line); }
 .policy-list article:last-child { padding-bottom: 0; border-bottom: 0; }
 .policy-list h3 { margin-bottom: 6px; }
-.policy-list p { margin: 0; color: var(--muted); }
+.policy-list p { margin: 0; color: var(--body-text); }
 .greeting-copy p,
-.story-copy p { color: var(--muted); }
+.story-copy p { color: var(--body-text); }
 .greeting-copy p:first-child,
 .story-copy p:first-child { margin-top: 0; }
 .profile-greeting-section { padding-top: 24px; }
@@ -161,7 +163,7 @@ h3 { font-size: 20px; }
 .principle-marker { position: absolute; top: -5px; left: 0; width: 10px; height: 10px; border: 2px solid var(--paper); border-radius: 50%; background: var(--lamp); }
 .principle-photo { margin: 0 0 18px; overflow: hidden; border-radius: 14px; box-shadow: 0 10px 28px rgba(32, 40, 35, 0.08); }
 .principle-photo img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center; }
-.principle-grid p { color: var(--muted); }
+.principle-grid p { color: var(--body-text); }
 .section-action { margin: 32px 0 0; }
 
 .concern-illustration { margin: -8px auto 22px; overflow: hidden; max-width: 520px; border-radius: 16px; box-shadow: 0 12px 32px rgba(32, 40, 35, 0.08); background: white; }
@@ -176,9 +178,9 @@ h3 { font-size: 20px; }
 .recommend-list li { position: relative; padding: 13px 12px 13px 42px; border: 1px solid var(--line); border-radius: 10px; background: var(--white); }
 .recommend-list li::before { content: ""; position: absolute; left: 16px; top: 21px; width: 12px; height: 7px; border-left: 2px solid var(--clinic-blue); border-bottom: 2px solid var(--clinic-blue); transform: rotate(-45deg); }
 .safety-note { margin: 0 0 48px; padding: 20px; border-left: 4px solid #6f8a72; background: var(--safe); }
-.safety-note p { margin: 6px 0 0; }
+.safety-note p { margin: 6px 0 0; color: var(--muted); }
 .flow-summary { padding: 22px 20px; border: 1px solid var(--line); border-radius: 12px; background: var(--white); }
-.flow-summary p { margin: 0; color: var(--muted); }
+.flow-summary p { margin: 0; color: var(--body-text); }
 .subsection-title { margin: 0 0 24px; font-size: 24px; }
 .flow-summary .subsection-title { margin-bottom: 8px; }
 .flow-cards { margin: 0; padding: 0; list-style: none; display: grid; gap: 18px; }
@@ -188,12 +190,14 @@ h3 { font-size: 20px; }
 .flow-cards div { padding: 20px; }
 .flow-cards span { width: 38px; height: 38px; margin-bottom: 12px; display: grid; place-items: center; border-radius: 50%; background: var(--clinic-blue); color: white; font-weight: 700; font-variant-numeric: tabular-nums; }
 .flow-cards h3 { margin-bottom: 6px; font-size: 21px; }
-.flow-cards p { margin: 0; color: var(--muted); }
+.flow-cards p { margin: 0; color: var(--body-text); }
 .reservation-boxes { display: grid; gap: 16px; }
 .reservation-boxes article { padding: 22px; border: 1px solid var(--line); border-radius: 14px; background: var(--white); }
 .reservation-boxes h3 { margin-bottom: 6px; }
-.reservation-boxes p { color: var(--muted); }
+.reservation-boxes p { color: var(--body-text); }
+.reservation-boxes .button { margin-top: 12px; }
 .reservation-boxes .text-link { display: inline-block; margin-top: 12px; }
+.phone-button { min-width: 190px; font-variant-numeric: tabular-nums; }
 .notice-list { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; counter-reset: notice; }
 .notice-list-section .section-heading { margin-bottom: 24px; }
 .notice-list-section h2:not(.section-label-title) { color: #374039; font-size: clamp(24px, 6vw, 32px); }
@@ -221,20 +225,32 @@ h3 { font-size: 20px; }
 .price-action .button { width: 100%; }
 .price-action p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
 .price-table { overflow: hidden; border: 1px solid var(--line); border-radius: 14px; background: var(--white); }
-.price-row { display: grid; grid-template-columns: 1fr auto; gap: 10px 14px; align-items: start; padding: 16px; border-top: 1px solid var(--line); }
+.price-row { display: grid; grid-template-columns: 100px minmax(0, 1fr); gap: 8px 10px; align-items: center; padding: 14px 16px; border-top: 1px solid var(--line); }
 .price-row:first-child { border-top: 0; }
 .price-row-head { display: none; color: var(--muted); background: var(--wash); font-size: 13px; font-weight: 700; }
 .price-row div { display: grid; gap: 4px; }
 .price-row div:nth-child(2) { grid-column: 1 / -1; order: 3; }
 .price-row div:last-child { justify-items: end; text-align: right; }
 .price-row strong { color: var(--clinic-blue-dark); font-size: 18px; }
+.price-row .price-plan-cell { align-self: center; gap: 2px; }
+.price-row .price-plan-cell span { color: var(--body-text); font-size: 14px; line-height: 1.65; white-space: nowrap; }
+.price-row .price-row-spacer { display: none; }
 .price-row div:last-child strong { font-size: 26px; line-height: 1.25; font-variant-numeric: tabular-nums; }
 .price-row span, .price-row small { color: var(--muted); }
 .price-row .coupon-price, .price-row .sale-price-table { color: var(--offer-red); }
-.price-cell-offer { gap: 3px; }
-.table-regular-price { display: inline-flex; align-items: baseline; width: max-content; color: var(--clinic-blue-dark); font-size: clamp(24px, 8vw, 34px); font-weight: 700; line-height: 1.15; text-decoration: none; font-variant-numeric: tabular-nums; }
-.price-table-badge { margin-top: 5px; justify-self: end; font-size: 12px; }
-.price-row div:last-child .sale-price-table { font-size: clamp(32px, 11vw, 44px); }
+.price-row-coupon small { color: var(--offer-red); font-weight: 700; }
+.coupon-price-line { display: flex !important; align-items: baseline; justify-content: flex-end; gap: 3px; white-space: nowrap; }
+.coupon-regular-price { color: var(--muted); font-size: 13px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.coupon-price-line .regular-number::after { height: 1.5px; }
+.price-row-coupon .coupon-price { font-size: 24px; }
+.price-cell-offer { gap: 5px; align-content: center; }
+.table-regular-label { width: 100%; max-width: 100%; justify-self: stretch; color: var(--muted); font-size: 11px; line-height: 1.45; text-align: right; overflow-wrap: anywhere; }
+.offer-price-line { display: flex !important; align-items: baseline; justify-content: flex-end; gap: 3px; white-space: nowrap; }
+.table-regular-price { display: inline-flex; align-items: baseline; width: max-content; color: var(--clinic-blue-dark); font-size: clamp(16px, 4.4vw, 22px); font-weight: 700; line-height: 1.15; text-decoration: none; font-variant-numeric: tabular-nums; }
+.offer-price-line .regular-number::after { height: 2px; }
+.offer-price-arrow { color: var(--muted); font-size: 12px; font-weight: 700; }
+.price-table-badge { margin-top: 1px; justify-self: end; font-size: 12px; }
+.price-row div:last-child .sale-price-table { font-size: clamp(24px, 6.4vw, 32px); }
 .price-note { margin-top: 20px; padding: 18px; border-left: 4px solid #6f8a72; background: var(--safe); }
 .price-note p { margin: 0 0 16px; color: var(--muted); }
 .price-note .inline-actions { grid-template-columns: 1fr; gap: 8px; }
@@ -242,7 +258,7 @@ h3 { font-size: 20px; }
 .detail-list { margin-top: 0; }
 .info-panel { padding: 24px; border: 1px solid var(--line); border-radius: 14px; background: var(--white); }
 .info-panel h3 { margin-bottom: 8px; }
-.info-panel p { color: var(--muted); }
+.info-panel p { color: var(--body-text); }
 
 .director-grid, .access-grid { display: grid; gap: 36px; align-items: center; }
 .director figure, .access figure { margin: 0; }
@@ -252,7 +268,8 @@ h3 { font-size: 20px; }
 .director-name { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 16px; }
 .director-name strong { font-size: 22px; }
 .director-name span { color: var(--muted); font-size: 14px; }
-blockquote { margin: 28px 0; padding: 20px 0 20px 20px; border-left: 3px solid var(--lamp); color: var(--wood); font-family: var(--font-display); font-size: 20px; line-height: 1.8; }
+blockquote { max-width: 760px; margin: 28px 0; padding: 18px 0 18px 20px; border-left: 4px solid var(--lamp); color: #5f4638; font-family: var(--font-display); font-size: clamp(22px, 6vw, 30px); line-height: 1.65; }
+blockquote span { display: block; }
 .split-heading { display: grid; gap: 24px; }
 .split-heading .button { margin-top: 12px; }
 .access figure img { border-radius: 14px; box-shadow: var(--shadow); }
@@ -292,23 +309,26 @@ blockquote { margin: 28px 0; padding: 20px 0 20px 20px; border-left: 3px solid v
 .final-actions { margin-top: 30px; display: grid; gap: 18px; }
 .final-actions > div { display: grid; gap: 6px; }
 .final-actions span { color: #dce9f3; font-size: 12px; }
-.site-footer { padding: 48px 0 110px; background: #17201b; color: #dce2dd; }
+.site-footer { padding: 48px 0 220px; background: #17201b; color: #dce2dd; }
 .footer-grid { display: grid; gap: 24px; }
 .site-footer strong { color: white; font-family: var(--font-display); font-size: 20px; }
 .site-footer p { margin: 6px 0 0; color: #aeb9b1; font-size: 13px; }
+.footer-phone { color: #f7fbf8; font-size: 14px; font-weight: 700; font-variant-numeric: tabular-nums; text-underline-offset: 4px; }
 .site-footer nav { display: flex; flex-wrap: wrap; gap: 12px 22px; }
 .site-footer nav a { color: white; font-size: 14px; }
 .footer-note { grid-column: 1 / -1; }
 
-.mobile-booking-bar { position: fixed; z-index: 60; right: 0; bottom: 0; left: 0; display: grid; grid-template-columns: 32% 68%; grid-template-rows: auto 1fr; min-height: calc(104px + env(safe-area-inset-bottom)); padding-bottom: env(safe-area-inset-bottom); background: var(--paper); box-shadow: 0 -8px 24px rgba(32,40,35,.16); }
-.mobile-booking-offer { grid-column: 1 / -1; min-height: 40px; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 6px 10px; border-top: 1px solid #f0b9bd; background: #fff5f6; color: var(--ink); font-size: 13px; line-height: 1.3; text-align: center; }
-.mobile-offer-badge { flex: 0 0 auto; padding: 2px 7px; border-radius: 999px; background: var(--offer-pink); color: var(--offer-red-dark); font-size: 12px; font-weight: 800; }
-.mobile-offer-price { min-width: 0; color: var(--clinic-blue-dark); font-weight: 700; font-variant-numeric: tabular-nums; }
+.mobile-booking-bar { position: fixed; z-index: 60; right: 0; bottom: 0; left: 0; display: grid; grid-template-columns: 34% 66%; grid-template-rows: auto 1fr; gap: 8px; min-height: calc(116px + env(safe-area-inset-bottom)); padding: 8px 10px calc(8px + env(safe-area-inset-bottom)); background: rgba(255, 253, 248, 0.98); box-shadow: 0 -10px 30px rgba(32,40,35,.18); }
+.mobile-booking-offer { grid-column: 1 / -1; min-height: 40px; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 6px 10px; border: 1px solid #f0b9bd; border-radius: 10px; background: #fff5f6; color: var(--ink); font-size: 13px; line-height: 1.3; text-align: center; }
+.mobile-offer-badge { flex: 0 0 auto; padding: 3px 9px; border-radius: 999px; background: var(--offer-red); color: white; font-size: 14px; font-weight: 900; line-height: 1.25; box-shadow: 0 3px 8px rgba(179, 38, 30, 0.18); }
+.mobile-offer-price { min-width: 0; color: var(--clinic-blue-dark); font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .mobile-offer-price .regular-number { margin-inline: 2px; }
-.mobile-offer-price strong { color: var(--offer-red); font-size: 16px; }
-.mobile-booking-bar a { display: grid; place-items: center; padding: 12px 8px; color: white; font-size: 14px; font-weight: 700; text-align: center; text-decoration: none; }
+.mobile-offer-price .regular-number::after { height: 1.5px; top: 52%; background: rgba(179, 38, 30, 0.82); }
+.mobile-offer-price strong { color: var(--offer-red); font-size: 17px; white-space: nowrap; }
+.mobile-booking-bar a { display: grid; place-items: center; min-height: 52px; padding: 12px 8px; border-radius: 10px; color: white; font-size: 15px; font-weight: 800; line-height: 1.2; text-align: center; text-decoration: none; box-shadow: 0 6px 14px rgba(32,40,35,.18); }
 .mobile-call { background: var(--wood); }
 .mobile-book { background: var(--clinic-blue); }
+.mobile-booking-bar a:active { transform: translateY(1px); box-shadow: 0 3px 8px rgba(32,40,35,.18); }
 
 @media (min-width: 720px) {
   .section { padding: 92px 0; }
@@ -333,8 +353,11 @@ blockquote { margin: 28px 0; padding: 20px 0 20px 20px; border-left: 3px solid v
   .flow-cards li:first-child { grid-column: 1 / -1; grid-template-columns: .86fr 1fr; align-items: stretch; }
   .flow-cards li:first-child img { height: 100%; aspect-ratio: auto; }
   .price-panel { grid-template-columns: .9fr .8fr 1.15fr; align-items: center; }
-  .price-row { grid-template-columns: .75fr 1.25fr .8fr; align-items: center; padding: 20px 24px; }
+  .price-row { grid-template-columns: .75fr 1.25fr .8fr; align-items: center; padding: 18px 24px; }
   .price-row-head { display: grid; }
+  .price-row .price-plan-cell span { font-size: 15px; white-space: nowrap; }
+  .price-row .price-row-spacer { display: block; }
+  .price-row .price-cell { grid-column: 3; }
   .price-row div:nth-child(2) { grid-column: auto; order: 0; }
   .price-row div:last-child { justify-items: start; text-align: left; }
   .price-note { display: grid; grid-template-columns: 1fr auto; gap: 22px; align-items: center; }
@@ -355,7 +378,7 @@ blockquote { margin: 28px 0; padding: 20px 0 20px 20px; border-left: 3px solid v
 }
 
 @media (max-width: 719px) {
-  body { padding-bottom: calc(104px + env(safe-area-inset-bottom)); }
+  body { padding-bottom: calc(116px + env(safe-area-inset-bottom)); }
   .section { padding: 56px 0; }
   .section-heading { margin-bottom: 28px; }
   .price-row-compact { grid-template-columns: minmax(0, 1fr) auto; align-items: center; }
@@ -377,7 +400,7 @@ blockquote { margin: 28px 0; padding: 20px 0 20px 20px; border-left: 3px solid v
   .access-page .access-grid { width: calc(100% - 24px); }
   .access-page .access-grid figure { width: 100%; }
   .access-page .access-grid figure img { width: 100%; aspect-ratio: 4 / 3; border-radius: 14px; }
-  blockquote { margin: 22px 0; }
+  blockquote { margin: 22px 0; padding-left: 16px; font-size: 20px; line-height: 1.7; }
 }
 
 @media (max-width: 360px) {
