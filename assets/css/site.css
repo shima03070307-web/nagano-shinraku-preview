@@ -36,6 +36,7 @@ img { display: block; max-width: 100%; height: auto; }
 a { color: inherit; }
 button, summary, a { -webkit-tap-highlight-color: transparent; }
 a:focus-visible, summary:focus-visible { outline: 3px solid var(--lamp); outline-offset: 4px; }
+.text-nowrap { white-space: nowrap; }
 .skip-link { position: fixed; z-index: 100; top: 8px; left: 8px; padding: 8px 14px; transform: translateY(-150%); background: var(--ink); color: white; }
 .skip-link:focus { transform: translateY(0); }
 
@@ -64,9 +65,12 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--lamp); outline
 
 .hero-grid { display: grid; gap: 28px; }
 .hero-cover-section { padding-top: 18px; padding-bottom: 24px; }
-.hero-cover-layout { display: grid; gap: 0; width: min(100% - 16px, 1180px); }
+.hero-cover-layout { display: grid; gap: 14px; width: min(100% - 16px, 1180px); }
 .hero-cover { margin: 0; overflow: hidden; border-radius: 12px; box-shadow: var(--shadow); background: white; }
 .hero-cover img { width: 100%; height: auto; }
+.hero-cover-copy { display: grid; gap: 8px; padding: 2px 4px 0; text-align: center; }
+.hero-cover-copy h1 { margin: 0; color: #1f3429; font-size: 24px; line-height: 1.38; letter-spacing: 0; }
+.hero-cover-copy p { max-width: 760px; margin: 0 auto; color: #4a5a51; font-size: 15px; line-height: 1.8; }
 .hero-actions { display: grid; gap: 8px; }
 .hero-visual { margin: 0; overflow: hidden; border-radius: 22px; box-shadow: var(--shadow); }
 .hero-visual img { width: 100%; height: clamp(190px, 56vw, 300px); object-fit: cover; object-position: 64% 48%; }
@@ -381,8 +385,11 @@ blockquote span { display: block; }
   .section { padding: 92px 0; }
   .section-compact { padding: 48px 0 62px; }
   .hero-cover-section { padding-top: 34px; }
-  .hero-cover-layout { width: min(1280px, calc(100% - 24px)); gap: 0; }
+  .hero-cover-layout { width: min(1280px, calc(100% - 24px)); gap: 18px; }
   .hero-cover { border-radius: 24px; }
+  .hero-cover-copy { padding-top: 2px; }
+  .hero-cover-copy h1 { font-size: 36px; line-height: 1.32; }
+  .hero-cover-copy p { font-size: 17px; line-height: 1.85; }
   .hero-actions { max-width: 560px; margin-inline: auto; }
   .hero-grid { grid-template-columns: 1.05fr .95fr; align-items: center; gap: 54px; }
   .hero-visual { order: 2; border-radius: 24px; }
@@ -495,6 +502,7 @@ blockquote span { display: block; }
 }
 
 @media (max-width: 340px) {
+  .hero-cover-copy h1 { font-size: 20px; }
   .mobile-booking-offer { gap: 3px; padding-inline: 5px; }
   .mobile-offer-badge { padding-inline: 6px; font-size: 12px; }
   .mobile-offer-price { font-size: 11px; }
