@@ -376,10 +376,11 @@ blockquote span { display: block; }
 .final-cta { padding: 76px 0 90px; background: var(--clinic-blue-dark); color: white; text-align: center; }
 .final-cta .eyebrow { color: #dce9f3; }
 .final-cta p { color: #edf3f7; }
-.compact-final-cta { padding-top: 58px; }
-.compact-final-title { margin-bottom: 20px; color: white; font-size: clamp(29px, 7.4vw, 38px); }
+.compact-final-cta { padding-top: 50px; padding-bottom: 78px; }
+.compact-final-title { margin-bottom: 16px; color: white; font-size: clamp(29px, 7.4vw, 38px); }
 .compact-final-cta p { max-width: 620px; margin: 0 auto; }
-.compact-final-cta .final-actions { margin-top: 24px; }
+.final-cta-mobile-break { display: none; }
+.compact-final-cta .final-actions { margin-top: 20px; }
 .final-actions { margin-top: 30px; display: grid; gap: 18px; }
 .final-actions > div { display: grid; gap: 6px; }
 .final-actions span { color: #dce9f3; font-size: 12px; }
@@ -607,6 +608,8 @@ blockquote span { display: block; }
   .mobile-offer-badge { padding-inline: 7px; font-size: 13px; }
   .mobile-offer-price { font-size: 11px; }
   .mobile-offer-price strong { font-size: 15px; }
+  .compact-final-cta p { max-width: 320px; font-size: 15px; line-height: 1.9; }
+  .final-cta-mobile-break { display: block; }
 }
 
 @media (max-width: 360px) {
